@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Cardápio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Bem-vindo ao App de Cardápio</h1>
+
+    <!-- Seção de Login -->
+    <div id="login-section">
+        <h2>Faça Login</h2>
+        <input type="text" id="username" placeholder="Usuário">
+        <input type="password" id="password" placeholder="Senha">
+        <button onclick="login()">Entrar</button>
+        <div id="error-message"></div>
+    </div>
+
+    <!-- Seção do Cardápio (escondida) -->
+    <div id="menu-section">
+        <h2>Cardápio do Dia</h2>
+        <div id="menu-items"></div>
+        <!-- Seção de Resumo do Pedido -->
+        <div id="order-summary" style="display: none;">
+            <h3>Seu Pedido</h3>
+            <div id="order-items"></div>
+            <p><strong>Total: </strong><span id="order-total">R$ 0,00</span></p>
+            <button onclick="clearOrder()">Limpar Pedido</button>
+        </div>
+        <button onclick="logout()">Sair</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
