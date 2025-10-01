@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Sorteio e Tarefas</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <header>
+        <h1>Sorteador de Bebidas</h1>
+    </header>
+
+    <main class="container">
+        <section id="adicionar-jogadores">
+            <h2>Quem vai jogar?</h2>
+            <input type="text" id="nome-jogador" placeholder="Digite o nome (ex: Ana)">
+            <button onclick="adicionarJogador()">Adicionar Jogador</button>
+            <div id="lista-jogadores">
+                </div>
+        </section>
+
+        <hr>
+
+        <section id="area-jogo">
+            <h2>Clique para Sortear a Próxima Vítima!</h2>
+            <button id="btn-sortear" onclick="sortear()" disabled>Sortear Jogador</button>
+
+            <div id="resultado">
+                </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script> </body>
+</html>
